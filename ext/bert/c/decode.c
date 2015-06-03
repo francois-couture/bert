@@ -1,6 +1,4 @@
 #include "ruby.h"
-#include <stdint.h>
-#include <netinet/in.h>
 
 #ifdef _WIN32_        // it it's a windows platform, include windows headers
 #include <winsock2.h>     //windows headers
