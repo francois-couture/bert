@@ -2,6 +2,14 @@
 #include <stdint.h>
 #include <netinet/in.h>
 
+#ifdef _WIN32_        // it it's a windows platform, include windows headers
+#include <winsock2.h>     //windows headers
+#include <windows.h>     //windows headers
+#else                     // else include linux headers
+#include <stdint.h>       //linux header file
+#include <netinet/in.h>      //linux header file
+#endif
+
 #define ERL_IEEE_754_BINARY_64 70
 #define ERL_SMALL_INT          97
 #define ERL_INT                98
