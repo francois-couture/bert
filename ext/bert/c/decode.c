@@ -1,6 +1,6 @@
 #include "ruby.h"
 
-#ifdef _WIN32_        // it it's a windows platform, include windows headers
+#ifdef __MINGW32__        // it it's a windows platform, include windows headers
 #include <winsock2.h>     //windows headers
 #include <windows.h>     //windows headers
 #else                     // else include linux headers
